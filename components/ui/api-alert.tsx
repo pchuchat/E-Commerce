@@ -7,6 +7,8 @@ import { Badge, BadgeProps } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { toast } from "react-hot-toast";
 
+
+
 interface ApiAlertProps {
     title: string;
     description: string;
@@ -31,7 +33,7 @@ variant ="public",
 
     const onCopy = () => {
         navigator.clipboard.writeText(description);
-        toast.success("API Route copied to the clipboard");
+        toast.success("API Route copied to the clipboard.");
     };
     return(
         <Alert>

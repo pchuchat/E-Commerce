@@ -8,12 +8,12 @@ import { ApiList } from "@/components/ui/api-list";
 
 import { Plus } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
-import { BillboardColumn, columns } from "./columns";
+import { SizeColumn, columns } from "./columns";
 
-interface BillboardClientProps {
-    data: BillboardColumn[]
+interface SizesClientProps {
+    data: SizeColumn[]
 }
-export const BillboardClient: React.FC<BillboardClientProps> = ({
+export const SizesClient: React.FC<SizesClientProps> = ({
     data
 }) => {
     const router = useRouter();
@@ -25,21 +25,21 @@ export const BillboardClient: React.FC<BillboardClientProps> = ({
         <>
         <div className=" flex items-center justify-between">
           <Heading 
-          title={`Billboards (${data.length})`}
-          description="Manage billboards for your store"
+          title={`Sizes (${data.length})`}
+          description="Manage sizes for your store"
            />
 
-        <Button onClick={() => router.push(`/${params.storeId}/billboards/new`)}>
+        <Button onClick={() => router.push(`/${params.storeId}/sizes/new`)}>
             <Plus className="mr-2 h-4 w-4" />
             Add New
         </Button>
      
         </div>
         <Separator />
-        <DataTable searchKey="label" columns={columns} data={data}/>
-        <Heading title="API" description="API calls for Billboards"/>
+        <DataTable searchKey="name" columns={columns} data={data}/>
+        <Heading title="API" description="API calls for Sizes"/>
         <Separator />
-        <ApiList  entityName="billboards" entityIdName="billboardId"/>
+        <ApiList  entityName="sizes" entityIdName="sizeId"/>
 
       
         </>
