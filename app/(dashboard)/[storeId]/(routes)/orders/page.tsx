@@ -1,6 +1,6 @@
 import { format } from "date-fns";
 
-import prismadb from "@/lib/prismadn";
+import prismadb from "@/lib/prismadb";
 import { formatter } from "@/lib/utils";
 
 import { OrderColumn } from "./components/columns"

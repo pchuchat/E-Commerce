@@ -1,4 +1,4 @@
-import prismadb from "@/lib/prismadn";
+import prismadb from "@/lib/prismadb";
 
 import { ProductForm } from "./components/product-form";
 
