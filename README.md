@@ -4,7 +4,7 @@
 
 This is a full-featured e-commerce platform built with Next.js 13, Tailwind, Prisma, and MySQL. It includes a feature-rich admin dashboard that also serves as a CMS and API. The dashboard is capable of handling multiple vendors and stores.
 
-
+![dashboard](https://github.com/pchuchat/E-Commerce/assets/84800814/bc583255-883a-49c8-b90c-2164e2eb7598)
 
 ## Features
 
